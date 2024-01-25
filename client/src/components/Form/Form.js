@@ -19,8 +19,8 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     dispatch(createPost(postData));
+    clear();
   };
 
   const clear = () => {
@@ -106,7 +106,6 @@ const Form = () => {
           variant="contained"
           color="secondary"
           size="small"
-          type="submit"
           fullWidth
           onClick={clear}
         >
